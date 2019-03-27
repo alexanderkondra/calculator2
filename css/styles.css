@@ -1,0 +1,4 @@
+.bg {
+  background: linear-gradient(to right, red, blue);
+  height: 100%;
+}
