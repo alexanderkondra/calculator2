@@ -52,28 +52,30 @@ var divide = function(number1, number2) {
 };
 
 $(document).ready(function() {
-  $("form#add").click(function(event) {
+  $("#button1").click(function(event) {
     event.preventDefault();
+    console.log("add clicked");
     var number1 = parseInt($("#add1").val());
     var number2 = parseInt($("#add2").val());
     var result = add(number1, number2);
     $("#output").text(result);
   });
-  $("form#add").click(function(event) {
+  $("#button2").click(function(event) {
+    event.preventDefault();
+    console.log("subtract clicked");
+    var number1 = parseInt($("#add1").val());
+    var number2 = parseInt($("#add2").val());
+    var result = subtract(number1, number2);
+    $("#output").text(result);
+  });
+  $("#button3").click(function(event) {
     event.preventDefault();
     var number1 = parseInt($("#add1").val());
     var number2 = parseInt($("#add2").val());
-    var result = substract(number1, number2);
+    var result = multiply(number1, number2);
     $("#output").text(result);
   });
-  $("form#add").click(function(event) {
-    event.preventDefault();
-    var number1 = parseInt($("#add1").val());
-    var number2 = parseInt($("#add2").val());
-    var result = miltiply(number1, number2);
-    $("#output").text(result);
-  });
-    $("form#add").click(function(event) {
+    $("#button4").click(function(event) {
       event.preventDefault();
       var number1 = parseInt($("#add1").val());
       var number2 = parseInt($("#add2").val());
